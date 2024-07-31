@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/
+    ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <style>
+        body{
+            margin: 5px;
+        }
+
+        .container{
+            display: flex;
+            width: 100vw;
+            height: 500px;
+            justify-content: space-around;
+            flex-wrap:nowrap;
+            background-color: brown;
+            align-items: flex-start;
+
+            flex-direction: column;
+            /* overflow: scroll; */
+        }
+
+        .container div{
+            margin: 5px;
+            height: 100px;
+            width: 200px;
+            background-color: rgb(146, 80, 80);
+            text-align: center;
+            align-content: center;
+        }
+
+        .item8{
+            order: -1;
+            flex-grow: 0;
+            flex-shrink: 0;
+            font-size: 50px;
+        }
+
+        .item5{
+            order: 4;
+            flex-grow: 2;
+            
+        }
+
+        .item3{
+            order: 4;
+            flex-shrink: 2;
+        }
+
+        .item1{
+            order: 5;
+        }
+
+      
+        @media screen and (width< 992px) {
+            .container{
+                background-color: brown;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+        }
+
+        @media screen and (width<600px) {
+            .container{
+                background-color:  aqua;
+                flex-wrap: wrap;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="item2">
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="item3">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="item4">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="item5">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="item6">
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="item7">
+            <i class="fa-solid fa-music"></i>
+        </div>
+        <div class="item8">
+            <i class="fa-solid fa-cloud"></i>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        :root{
+            --main-bg:#9c5d5d;
+            --primary-color:red;
+            --accent-color:blue;
+            --padding-amount:10px;
+        }
+
+        body{
+            background-color: var(--main-bg);
+        }
+
+        .class1{
+            --class1-variable:rgb(78, 159, 93);
+
+        }
+
+        .class1{
+            height: 200px;
+            width: 250px;
+            background-color: var(--class1-variable);
+            padding: var(--padding-amount);
+        }
+
+        class2{
+            height: 100px;
+            width: 50px;
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <div class="class1">
+            <div class="class2">Test</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<title>My Resume</title>
+    <style>
+        /* .*{
+            margin: 0;
+            padding: 0;
+        } */
+        .container{
+            display: grid;
+            background-color: rgb(204, 244, 230);
+            width: 100%;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(4, auto);
+            
+            
+        }
+
+        .name{
+            grid-row: 1 / 2;
+            grid-column: 2 / 5;
+            height: 150px;
+            }
+
+        .image{
+           grid-column: 1/2;
+           grid-row: 1/2;
+           background-color: rgb(127, 174, 184);
+           text-align: center;
+           
+        }
+
+        .contact{
+            grid-column: 1 / 2;
+            grid-row: 2 / 7;
+            background-color: rgb(127, 174, 184);
+           /* text-align: center; */
+        }
+
+        .profile{
+            grid-column: 2/5;
+            grid-row: 2/3;
+
+        }
+
+        .education{
+            grid-column: 2/5;
+
+        }
+
+        .exp{
+            grid-column: 2/5;
+
+        }
+
+        .skills{
+            grid-column: 1/2;
+            grid-row: 3/3;
+            
+
+        }
+
+        .cert{
+            grid-column: 1/2;
+            grid-row: 4/6;
+        }
+
+        
+    </style>
+
+<body>
+    <div class="container">
+    <div class="name">
+        <h1>Luna Maharjan</h1>
+        <p>HTML|CSS|JavaSript|Java</p>
+    </div>    
+
+    <div class="image">
+        <img src="flower.avif" style="border-radius: 50%;" height="160px" width="160px"/>
+    </div>
+
+    <div class="contact">
+        <h2>Contact</h2>
+        <h4>Address : Strathfield</h4>
+        <h4>lunamhrjn@gmail.com</h4>            
+    </div>
+
+    <div class="profile">
+        <h2>Profile</h2> 
+        <p>A self-motivated, hardworking person who has a passion to progress within the industry. 
+        Effective communication skills with a knack for leadership and capacity to grow with the team. 
+        Always motivated to learn about the technology, especially, has an enthusiasm to learn AI. 
+        Seeking to advance my career by growing with a remarkable team and reputed company.
+        </p>
+        <hr>
+    </div>
+    
+    <div class="education">
+        <h2>Education</h2>
+        <ul>
+            <li><b>Victoria University (VU)</b><br>
+            Sussex street, townhall<br>
+            Master of Applied Information Technology (MaIT)(2024)
+        </li>
+        <br>
+        <li><b>Asian School of Management and Technology (2019)</b>
+        <br>Kathmandu, Nepal
+        <br>Bachelors in Information Management (BIM) </li> <br>
+
+        <li><b>National College of Computer Studies (NCCS) (2015)</b>
+        Kathmandu, Nepal<br>
+        High School <br>
+        Major Subject- Basic Mathematics, Business Mathematics, Computer Science
+        </li> 
+        </ul>
+    <hr>
+    </div>
+
+    <div class="skills">
+        <h2>Skills</h2>
+        <ul>
+           <li>HTML</li> 
+           <li>CSS</li>
+           <li>PHP</li>
+           <li>JavaScript</li>
+           <li>Java</li>
+           <li>Mern</li>
+           <li>Python</li>
+        </ul>
+        
+    </div>
+    <div class="exp">
+        <h2>Experience</h2>
+        <ul>
+            <li>Contributor in Merobato R&D hub<br>
+                <b>2016-2018</b><br>
+                Researched and organized facts and sources and coordinated with the client.<br>
+                Project Management over a certain core project of the company.
+            </li>
+            <br>
+
+            <li> Intern in Knockout System Pvt. Ltd. for 3 months<br>
+                <b>2019</b><br>
+            Learned to use HTML, PHP, CSS, Java, and Javascript in the real field. </li> <br>
+
+            <li>Data Specialist in Sprout Technology<br>
+                <b>2018-2022</b><br>
+                Updated organizational and subsystems to improve and streamline data collection.
+            </li> 
+        </ul>
+    
+    </div>
+
+    <div class="cert">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Graphic Designing from Dynamic Institution</li>
+            <li>Cybersecurity from Cisco Certified Network Associate (CCNA)</li>
+            <li>Creative AI from the Institute of Coding</li>
+            <li>Thrive in trying times teach-out from University of Michigan</li>
+            <li>Google Spreadsheet Training</li>
+            <li>Growth-Driven Design from HubSpot</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
