@@ -7,90 +7,7 @@
     <!-- fontawesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
-    <style>
-        *{
-            margin: 0;
-            padding: 2px;
-        }
-        .body{
-            margin: 5px;
-        }
-
-        /* .container{
-            display: flex;
-            flex-direction: column;
-
-        } */
-
-        .first{
-            height: 40px;
-            width: 100%;
-            background-color: lightskyblue;
-            display: flex;
-            justify-content: space-between;
-            
-        }
-
-        .logo{
-            display: flex;
-            border-radius: 50%;
-        }
-
-        .navbar{
-            display: flex;
-            background-color: aquamarine;
-            width: 100%;
-            height: 30px;
-            justify-content: space-between;
-        }
-
-        ul{
-            display: flex;
-            list-style-type: none;
-        }
-
-        .pic{
-            display: flex;
-            justify-content: space-around;
-            background-image: url(bird.webp);
-            width: 100%;
-            height: 500px;
-        }
-
-        .box{
-            box-shadow: 50px ;
-            align-content: center;
-            margin-top: 50px;
-            width:400px;
-            height:150px;
-            background-color: rgb(47, 52, 55);
-            text-align: center;
-            position: absolute;
-            opacity: 0.8;
-            justify-content: space-between;
-
-        }
-
-        .items{
-            display: flex;
-        }
-
-        .items .item1 .item2 .item3{
-            /* display: flex; */
-            height: 300px;
-            width: 70%;
-            margin: 5px;
-        }
-
-        .item4{
-            background-color: greenyellow;
-            height: 150px;
-            width: 250px;
-            border-radius: 5px;
-        }
-        
-    </style>
-
+    <link rel="stylesheet" href="project.css">
 
 </head>
 
@@ -98,84 +15,116 @@
 <body>
 
     <div class="container">
+
+    <!--First Nav-->
         <div class="welcome">
 
-            
             <div class="first">
                 
-                <div>Welcome</div>
+                <div class="wel">Welcome</div>
                 
                 <div class="logo">
-                    <!-- <ul>
+                    <ul>
                         <li><i class="fa-brands fa-facebook"></i></li>
                         <li><i class="fa-brands fa-instagram"></i></li>
                         <li><i class="fa-brands fa-youtube"></i></li>
-                    </ul> -->
-                    <div class="fb"><i class="fa-brands fa-facebook"></i></div>
+                    </ul>
+                    <!-- <div class="fb"><i class="fa-brands fa-facebook"></i></div>
                     <div class="insta"><i class="fa-brands fa-instagram"></i></div>
-                    <div class="yt"><i class="fa-brands fa-youtube"></i></div>
+                    <div class="yt"><i class="fa-brands fa-youtube"></i></div> -->
                 </div>
             </div>
         
             </div>
 
-            <!-- Navigation bar -->
+            <!-- Second Navigation bar -->
              <div class="navbar">
-                <div class="logo">Logo</div>
+                <div class="text">
+                    <div class="text1" style="background-color: white;">
+                    <div class="logo1" style="margin-top: 12px; color: blue;" >Logo</div>
+                </div>
+                </div>
                 <ul>
-                    <li>Home</a></li>
-                    <li>Conatct</a></li>
-                    <li>About</a></li>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="about">About</a></li>
                 </ul>
              </div>
             
-
+        <!--Image-->
         <div class="pic" >
             
             <div class="box">
 
-                <div><h3>Welcome to my travel blog</h3> </div>
-                <hr>
-                <div>Your one stop gateway information</div>
+                <h3>Welcome to my travel blog</h3><br>
+                <hr style="margin: 25px;"><br>
+                Your one stop gateway information
             </div>
         </div>
 
-        <div>Latest Posts
-        <hr>        
-    </div>
+        <!--Latest Posts-->
 
+        <div style="margin: 40px;"><h2>Latest Posts</h2><br>
+        <hr>        
+        </div>
+
+        <!--Posts-->
         <div class="items">
-            <div class="item1">
-                <img src="frog.webp" height="200px">
-                <b>How to travel around the world with less $$$?</b><br>
-                <i class="fa-solid fa-calendar-days"></i><h5>31/07/2024</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit provident ullam dolor 
-                    aut nesciunt praesentium cumque, labore temporibus repellendus natus 
-                    velit eligendi iste rem quis, consequuntur veritatis amet blanditiis inventore.</p>
+            <div class="post1">
+                <div class="item1">
+                    <img src="bird1.jpg" height=200px" width="200px">
+                    <div class="item01">
+                    <div><h2 style="color: blue;">How to travel around the world with less $$$?</b></div>
+                    <div><i class="fa-solid fa-calendar-days"></i>31/07/2024</div>
+                    <div class="pp"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Vitae similique velit nam omnis ea rerum dolorum ad veniam iusto. 
+                        Quibusdam!</p>
+                    </div>
+                    <button class="pbtn">Readmore...</button>
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <div class="post1">
+                        <img class="img2" src="./assets/a.jpg">
+                        <div class="postbody">
+        
+                            <div class="phead">How to travel around the world with less $$$</div>
+                            <div class="pbody">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                                olorein talone narum ar er earum renellencus. ducimus<br>
+                                tempora repellat tenetur culpa..
+                            </div>
+                            <button class="read" >Read more...</button>
+                        </div>
+
+                <div class="item1">
+                    <img src="bird.webp" height="200px" width="200px">
+                    <div class="item01">
+                        <div><h2 style="color: blue;">How to travel around the world with less $$$?</b></div>
+                            <div><i class="fa-solid fa-calendar-days"></i>31/07/2024</div>
+                    <div class="pp"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae similique velit nam omnis ea rerum dolorum ad veniam iusto. Quibusdam!</p></div>
+                    <button class="pbtn">Readmore...</button>
+                    </div>
+                </div>
+
+                <div class="item1">
+                    <img src="bird1.jpg" height="200px" width="200px">
+                    <div class="item01">
+                    <div><h2 style="color: blue;">How to travel around the world with less $$$?</b></div>
+                    <div><i class="fa-solid fa-calendar-days"></i>31/07/2024</div>
+                    <div class="pp"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae similique velit nam omnis ea rerum dolorum ad veniam iusto. Quibusdam!</p></div>
+                    <button class="pbtn">Readmore...</button>
+                    </div>
+                </div>
             </div>
+
+            <div class="post2">
 
             <div class="item2">
-                <img src="bird1.jpg" height="200px">
-                <b>How to travel around the world with less $$$?</b><br>
-                <i class="fa-solid fa-calendar-days"></i><h5>31/07/2024</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Impedit provident ullam dolor aut nesciunt praesentium cumque, labore temporibus repellendus natus velit eligendi iste rem quis, 
-                    consequuntur veritatis amet blanditiis inventore.</p>
-            </div>
-
-            <div class="item3">
-                <img src="frog.webp" height="200px">
-                <b>How to travel around the world with less $$$?</b><br>
-                <i class="fa-solid fa-calendar-days"></i><h5>31/07/2024</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Impedit provident ullam dolor aut nesciunt praesentium cumque, labore temporibus repellendus natus velit eligendi iste rem quis, 
-                    consequuntur veritatis amet blanditiis inventore.</p>
-            </div>
-
-            <div class="item4">
-                <h4>Read by country</h4>
+                <h3 style="padding: 20px;">Read by country</h3>
                 <ul>
-                    <li>Australia</li>
+                    <li><a href="">Australia</a></li>
                     <li>UK</li>
                     <li>USA</li>
                     <li>Nepal</li>
@@ -183,8 +132,96 @@
                 </ul>
             </div>
 
+            <div class="item3">
+                <h3 style="padding: 20px;">Read by date</h3>
+                <ul>
+                    <li>2024</li>
+                    <li>2023</li>
+                    <li>2022</li>
+                    <li>2021</li>
+                    <li>2020</li>
+                </ul>
+            </div>
+            </div>
+
         </div>
 
+    <div class="rd">
+        <div class="reco" style="padding: 30px; padding-bottom: 0;"><h2>Recommendation Destination</h2><br>
+        <hr></div>
+        <div class="destination">
+            
+            <div class="des">
+                <img src="bird.webp" width="100%" style="border-radius: 10px;">
+                <div class="des1"><h4>Lorem ipsum dolor sit amet.</h4><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, repellendus 
+                    fugit architecto dolor eius quisquam enim atque iste facilis veniam.</p>
+                <button class="dbtn">Explore<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="des">
+                <img src="bird.webp" width="100%" style="border-radius: 10px;">
+                <div class="des1"><h4>Lorem ipsum dolor sit amet.</h4><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, repellendus 
+                    fugit architecto dolor eius quisquam enim atque iste facilis veniam.</p>
+                <button class="dbtn">Explore<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="des">
+                <img src="bird.webp" width="100%" style="border-radius: 10px;">
+                <div class="des1"><h4>Lorem ipsum dolor sit amet.</h4><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, repellendus 
+                    fugit architecto dolor eius quisquam enim atque iste facilis veniam.</p>
+                <button class="dbtn">Explore<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="des">
+                <img src="bird.webp" width="100%" style="border-radius: 10px;">
+                <div class="des1"><h4>Lorem ipsum dolor sit amet.</h4><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, repellendus 
+                    fugit architecto dolor eius quisquam enim atque iste facilis veniam.</p>
+                <button class="dbtn">Explore<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="des">
+                <img src="bird.webp" width="100%" style="border-radius: 10px;">
+                <div class="des1"><h4>Lorem ipsum dolor sit amet.</h4><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, repellendus 
+                    fugit architecto dolor eius quisquam enim atque iste facilis veniam.</p>
+                <button class="dbtn">Explore<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="des">
+                <img src="bird.webp" width="100%" style="border-radius: 10px;">
+                <div class="des1"><h4>Lorem ipsum dolor sit amet.</h4><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, repellendus 
+                    fugit architecto dolor eius quisquam enim atque iste facilis veniam.</p>
+                <button class="dbtn">Explore<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+        <h3 style="text-align: center; padding: 20px;">Subscribe to receive the latest articles!</h3>
+        <br>
+        <div class="form">
+            
+            <input type="text" placeholder="Your name"/>
+            <input type="email" placeholder="your@gmail.com"/>
+            <button>Submit</button>
+        </div>
+
+
+        <footer>@Copy right all reserved. Made by Luna.</footer>
     </div>
 </body>
 </html>
